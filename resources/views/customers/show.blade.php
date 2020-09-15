@@ -34,7 +34,7 @@
                             <select name="company_id">
                             @foreach ($companies as $company)
                                 <option value="{{ $company->id }}" 
-                                    @if($company->id == $customer->company_id)) 
+                                    @if($company->id == $customer->company_id) 
                                         selected="selected" 
                                     @endif 
                                 >{{ $company->name }}</option>
